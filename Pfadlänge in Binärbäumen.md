@@ -1,0 +1,1 @@
+Für einen Wert $k$ und einen Binärbaum $B$. Wenn die Blattanzahl eines Binärbaumes mindestens $2^k$ ist, existiert mindestens ein Pfad der Länge $>= k$.
