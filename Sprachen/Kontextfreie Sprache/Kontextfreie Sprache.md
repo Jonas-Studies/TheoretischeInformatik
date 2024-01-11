@@ -1,5 +1,14 @@
 # Definition
 Eine kontextfreie Sprache ist eine Sprache welche durch eine Grammatik der [[Grammatik#Typ 2 Kontextfreie Grammatiken|Cromsky-Hierachie vom Typ 2]] abgebildet wird.
+
+Kontextfreie Sprachen sind abgeschlossen unter:
+- Vereinigung
+- Produkt
+- Stern
+
+Kontextfreie Sprachen sind nicht abgeschloseen unter:
+- Schnitt
+- Komplement
 # Chomsky-Normalform
 Die möglichen Regeln einer Grammatik zum Bearbeiten einer Sprache $L$ werden auf zwei Fälle eingeschränkt.
 - Ein Nicht-Terminalsymbol geht über in zwei Nicht-Terminalsymbole
