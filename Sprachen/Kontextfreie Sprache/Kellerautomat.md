@@ -24,3 +24,5 @@ $$|-: Q \times \Sigma^{*} \times \Gamma^{*} \rightarrow Q \times \Sigma^{*} \tim
 Die von einem Kellerautomaten erkannte Sprache ist wie folgt definiert:
 Sei $\overset{*}{\vdash}$ die revlexiv-transitive Hülle von $\vdash.$ $\overset{*}{\vdash}$ ist somit eine Funktion welche von einer Konfiguration, durch mehrere Konfigurationen in eine gültige Konfiguration übergeht.
 $$L(M) = \{w \in \Sigma^{*} | (q_{0}, w, \#) \overset{*}{\vdash} (q, \epsilon, \epsilon) \text{ für ein } q \in Q\}$$
+# Determinismus
+Per Definition sind Kellerautomaten Nicht-Deterministisch. Allerdings lassen sich auch deterministische Kellerautomaten (DPDA) konstruieren, für diese müsste die Konstruktion des PDAs um einen Endzustand $q_f$ erweitert werden. Mit solchen Automaten kann allerdings nicht jede kontextfreie Sprache erkannt werden. Stattdessen würden von diese eine Sprachklasse zwischen den kontextfreien Sprachen und den regulären Sprachen erkennen.
