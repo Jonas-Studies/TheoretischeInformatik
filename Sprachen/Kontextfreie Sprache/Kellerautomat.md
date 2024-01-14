@@ -1,15 +1,21 @@
 # Definition
-Ein Kellerautomat (Pushdown Automaton kurz: PDA) lässt sich als 6-Tupel $(Q, \Sigma, \Gamma, \delta, q_{0}, \#)$ definieren.
-- Eine endliche Zustandsmenge $Q$
-- Ein endliches [[Bestandteile einer Sprache#Alphabet|Alphabet]] $\Sigma$ als Bandalphabet
-- Ein endliches [[Bestandteile einer Sprache#Alphabet|Alphabet]] $\Gamma$ als Kelleralphabet
-- Eine Übergangsfunktion $\delta$
-  Sei $P_{f}(X)$ eine Funktion, welche die Menge aller endlichen Teilmengen der Menge $X$ angibt.
-$$\delta: Q \times (\Sigma \cup \epsilon) \times \Gamma \longrightarrow P_{f}(Q \times \Gamma^{*})$$
-- Ein Anfangszustand $q_{0}$ für welchen gilt $q_{0} \in Q$
-- Ein ursprüngliches Kellersymbol $\#$ für welches gilt: $\# \in \Gamma$
+Ein Kellerautomat ist eine Maschine zum erkennen von [[Kontextfreie Sprache|Kontextfreien Sprachen]]. Ein Nicht-Deterministischer Kellerautomat $M$ lässt sich als 6-Tupel definieren.
 
-Wörter wenden vom Kellerautomaten aktzeptiert wenn dieser das Wort komplett liest und danach der Kellerspeicher leer ist.
+Dabei gilt $M = (Q, \Sigma, \Gamma, \delta, q_{0}, \#)$ mit:
+- **$Q$ als Zustandsmenge.**
+  Die Zustandsmenge ist dabei eine endliche Menge von Zuständen, welche die Maschine einnehmen kann.
+- **$\Sigma$ als Bandalphabet.**
+  Das Bandalphabet ist dabei eine endliche Menge von Zeichen, welche von der Maschine verarbeitet werden.
+- **$\Gamma$ als Kelleralphabet.**
+  Das Kelleralphabet ist dabei eine endliche Menge von Zeichen, welche die Maschine während einer Verarbeitung in den Kellerspeicher schreiben kann.
+- **$\delta$ als Übergangsfunktion.**
+  Die Übergangsfunktion beschreibt den Übergang der Maschine von einem Zustand in den nächsten. Dabei wird jeweils ein Zeichen vom Bandalphabet sowie das erste Zeichen vom Kellerspeicher gelesen. Zusätzlich werden beliebig viele Zeichen in den Kellerspeicher geschrieben.
+  Sei $P_{f}(X)$ eine Funktion, welche die Menge aller endlichen Teilmengen der Menge $X$ angibt, Dann ist $\delta$ definiert als:
+$$\delta: Q \times (\Sigma \cup \epsilon) \times \Gamma \longrightarrow P_{f}(Q \times \Gamma^{*})$$  
+- **$q_{0} \in Q$ als Anfangszustand.**
+  Der Anfangszustand ist ein Zustand der Zustandsmenge $Q$, in welchem sich die Maschine zu Beginn jeder Verarbeitung befindet.
+- **$\# \in \Gamma$ als anfänglichem Kellersymbol.**
+  Das Kellersymbol ist ein Zeichen des Kelleralphabets $\Gamma$, welches zu Beginn jeder Verarbeitung der Maschine im Kellerspeicher steht.
 # Konfiguration
 ## Definition
 Die Konfiguration eines PDA lässt sich als Drei-Tupel $(q, \Sigma^{*}, \Gamma^{*})$ darstellen. Diese stellt den aktuellen Zustand des PDA dar und besteht aus:
