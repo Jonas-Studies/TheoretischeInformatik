@@ -3,4 +3,6 @@ $S_{M} \left( \overset{\rightarrow}{x} \right) =$ Anzahl verschiedener Zellen, d
 # Worst-Case
 $$T_{M}(n) = \underset{ x \in \Sigma^{*}, |\overset{\rightarrow}{x}| \leq n }{ \text{max} } T_{M}(\overset{\rightarrow}{x})$$
 
-$$ \underset{s}{f} $$
+# Platzbeschränkt
+Eine Turing-Maschine heißt $s(n)$-platzbeschränkt, wenn für alle $n \in \mathbb{N}$ gilt:
+$$S_{M}(n) \leq s(n)$$
