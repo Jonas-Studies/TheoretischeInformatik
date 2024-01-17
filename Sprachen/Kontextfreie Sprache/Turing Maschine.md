@@ -29,3 +29,11 @@ Die Konfiguration einer Turing-Maschine lässt sich durch ein Wort $k$ darstelle
 - $q \in Q$ als aktueller Zustand der Maschine
 - $\alpha \in \Gamma^{*}$ als Zeichenkette links des aktuell selektierten Zeichens
 - $\beta \in \Gamma^{*}$ als Zeichenkette ab dem aktuell selektierten Zeichen
+## Erkannte Sprachen
+Eine allgemeine Turing-Maschine erkennt die Phrasenstruktur-Sprachen $L_0$
+# Linear beschränkte Turing-Maschine (LBA)
+Eine Nicht-Deterministische Turing-Maschine heißt linear beschränkt, wenn für alle $a_{1}a_{2}...a_{1-n}a_{n} \in \Sigma^{+}$ und alle Konfigurationen $\alpha q \beta$ mit $q_{0}$ $\hat{a}_1 a_{2} ... a_{n - 1} \hat{a}_{n} \overset{*}{\vdash} \alpha q \beta$ gilt, dass $|\alpha \beta| = n$.
+- Bandteil mit Eingabe wird nicht verlassen (Beschränkung auf $n!$) -> Endliches Band
+- Endmakierung für Grenzen rechts und links: $\Sigma \rightarrow \Sigma' = \Sigma \cup \{\hat{a}|a \in \Sigma\}$
+## Erkannte Sprachen
+Eine Linear beschränkte Turing-Maschine erkennt genau die kontextsensitiven Sprachen $L_1$.
