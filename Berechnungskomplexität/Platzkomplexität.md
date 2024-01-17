@@ -1,0 +1,1 @@
+$S_{M} \left( \overset{\rightarrow}{x} \right) =$ Anzahl verschiedener Zellen, die $M$ bei Eingabe $\overset{\rightarrow}{x} \in \Sigma^{*}$ besucht.
