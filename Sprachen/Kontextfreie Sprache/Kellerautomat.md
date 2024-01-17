@@ -25,7 +25,7 @@ Die Konfiguration eines PDA lässt sich als Drei-Tupel $(q, \Sigma^{*}, \Gamma^{
 
 ## Konfigurationsübergang
 Der Konfigurationsübergang ist eine Funktion $\vdash$ welche von einer Konfiguration in die nächste übergeht.
-$$|-: Q \times \Sigma^{*} \times \Gamma^{*} \rightarrow Q \times \Sigma^{*} \times \Gamma^{*}$$
+$$\vdash: Q \times \Sigma^{*} \times \Gamma^{*} \rightarrow Q \times \Sigma^{*} \times \Gamma^{*}$$
 # Erkannte Sprache
 Die von einem Kellerautomaten erkannte Sprache ist wie folgt definiert:
 Sei $\overset{*}{\vdash}$ die revlexiv-transitive Hülle von $\vdash.$ $\overset{*}{\vdash}$ ist somit eine Funktion welche von einer Konfiguration, durch mehrere Konfigurationen in eine gültige Konfiguration übergeht.
